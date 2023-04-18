@@ -1,7 +1,8 @@
 <?php
 
-//Слайд 15 задача 1
+echo "Урок 5-6 задачи <br>";
 
+echo "Слайд 15 задача 1 <br>";
 $j = 50;
 $arr = [];
 for($i = 0; $i < 5; $i++){
@@ -17,7 +18,7 @@ echo '<br>';
 echo $result;
 echo '<br>';
 
-//Сдайд 15 задача 2
+echo "Слайд 15 задача 2 <br>";
 
 $arr2 = [];
 for($i = 0; $i < 5; $i++){
@@ -30,26 +31,49 @@ for($i = count($arr2)-1; $i >= 0; $i--){
 }
 echo '<br>';
 
-//Слайд 15 задача 3   не получается подключить картинки
-
+echo "Слайд 15 задача 3 <br>";
 $images = ['bird.png', 'hamster.png', 'ladybug.png',];
 $v = mt_rand(0,2);
-echo $images[$v];
+echo $images[$v]."<br>";
+echo '<img src=' . $images[$v] . '>';
 echo '<br>';
 
-//Слайд 15 задача 4   не получается вывести нужные числа, выводятся максимальное и минимальное
-
+echo "Слайд 15 задача 4 <br>";
+$N = 10;
 $arr3 = [];
-for($i = 0; $i < 5; $i++){
+for($i = 0; $i < $N; $i++){
     $arr3[$i] = mt_rand(-100,100);
     echo $arr3[$i] . " ";
 }
 echo '<br>';
-if($arr3 > 0){
-    echo min($arr3);
-    echo '<br>';
-    echo max($arr3);
+$min = 0;
+$max = 0;
+foreach($arr3 as $value){
+    if($value>$max){
+        $max = $value;
+    }
+    if($value<$min){
+        $min = $value;
+    }
 }
+foreach($arr3 as $value){
+    if($value<0){
+        if($value>$min){
+            $min = $value;
+        }else{
+            $min = $min;
+        }
+    }elseif($value == 0){
+        $max = $max;
+    }else{
+        if($value<$max){
+            $max = $value;
+        }
+    }
+}
+echo "Минимальное положительное число $max";
+echo '<br>';
+echo "Максимальное отрицательное число $min";
 echo '<br>';
 
 //Строки
