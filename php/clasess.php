@@ -1,5 +1,5 @@
 <?php
-$str2 = "На занятиях все нравится, только из за работы не успеваю делать домашку";
+function staining_2($str){
 $arr = explode(" ", trim($str));
 foreach($arr as $key => $value){
     if($key % 2 == 0){
@@ -10,4 +10,7 @@ foreach($arr as $key => $value){
 }
 $V = implode(" ", $arr2);
 echo $V;
+}
+$str = "На занятиях все нравится, только из за работы не успеваю делать домашку";
+staining_2($str);
 ?>
