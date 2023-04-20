@@ -4,7 +4,7 @@
         </div>
         <div class="two">
             <div class="name">Волков Юра</div>
-            <div class="info">Работаю на комбинате горновым, в доменном цехе, хочу перейти работать в IT, прошел несколько небольших курсов по верстке и работе в Figma</div>
-            <div class="classes">На занятиях все нравится, только из за работы не успеваю делать домашку))</div>
+            <div class="info"><?php include_once 'php/info.php';?></div>
+            <div class="classes"><?php include_once 'php/clasess.php';?></div>
         </div>
     </div>

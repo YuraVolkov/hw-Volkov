@@ -1,9 +1,12 @@
 <div class="header">
-    <h1>
+    <h1>Моя страница</h1>
+    <div>
         <?php
-            $text = "Моя страница";
-            $word_count = explode(" ", $text);
-            echo $word_count;
+            echo "количество гласных букв";
+            echo '<br>';
+            echo "количество слов на странице";
+            echo '<br>';
+            echo "количество дней";
         ?>
-    </h1>
+    </div>
 </div>
