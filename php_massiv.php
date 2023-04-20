@@ -76,30 +76,28 @@ echo '<br>';
 echo "Максимальное отрицательное число $min";
 echo '<br>';
 
-//Строки
-
-$str = "Hello";
-print_r(str_split($str));
+echo "Урок 7-8 Строки";
 echo '<br>';
 
-//Слайд 22 задача 1
-
+echo "Слайд 22 задача 1";
+echo '<br>';
 $fact = "fact";
 $arr6 = str_split($fact);
-//print_r($arr6);
+print_r($arr6);
+echo '<br>';
 echo strtoupper($arr6[0]) . ($arr6[1]) . ($arr6[2]) . ($arr6[3]);
 $fact2 = implode(' ', $arr6);
 echo '<br>';
 
-//Слайд 22 задача 2
-
+echo "Слайд 22 задача 2";
+echo '<br>';
 $fio = "Волков, Юрий, Александрович";
 $arr7 = explode(", ", $fio);
 print_r($arr7[1] . " " . $arr7[0]);
 echo '<br>';
 
-//Слайд 22 задача 3
-
+echo "Слайд 22 задача 3";
+echo '<br>';
 $hello = "Привет, мир";
 $arr8 = mb_str_split($hello);
 print_r($arr8);
@@ -114,8 +112,8 @@ for($i = 0; $i < count($arr8) - 1; $i++){
 echo $sum;
 echo '<br>';
 
-//Слайд 22 задача 4
-
+echo "Слайд 22 задача 4";
+echo '<br>';
 $str1 = "html css php";
 $arr9 = explode(" ", $str1);
 print_r($arr9);
@@ -124,8 +122,8 @@ foreach($arr9 as $item){
     echo $item . '<br>';
 }
 
-//Слайд 22 задача 5
-
+echo "Слайд 22 задача 5";
+echo '<br>';
 $str2 = "123.png";
 $arr10 = str_split($str2);
 print_r($arr10);
@@ -137,16 +135,19 @@ if(substr($str2, -4, 4) == ".png"){
 }
 echo '<br>';
 
-echo "Урок 5-6 слайд 17 задача 8"; //не получается сформулировать условие, понимаю что нужно через работу со строками
+echo "Урок 5-6 слайд 17 задача 8";
 echo '<br>';
 $arr11 = [
-    ["ананас","банан","яблоко"],
-    ["помидор","огурец","абрикос"],
+    ["ананас","банан","яблоко","абрикос"],
+    ["помидор","огурец"],
     ["чай","кофе","вода"]
 ];
+print_r($arr11);
+echo '<br>';
 foreach($arr11 as $value){
     foreach($value as $item){
-        echo $item.", ";
+        if(mb_substr($item, 0, 1) == "а")
+        echo $item." ";
     }
 }
 echo '<br>';
