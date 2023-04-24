@@ -5,6 +5,6 @@
         <div class="two">
             <div class="name">Волков Юра</div>
             <div class="info"><?php include_once 'php/info.php';?></div>
-            <div class="classes"><?php include_once 'php/clasess.php';?></div>
+            <div class="classes"><?php include_once 'php/info_2.php';?></div>
         </div>
     </div>

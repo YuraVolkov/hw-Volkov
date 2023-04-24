@@ -1,14 +1,23 @@
 body{
     margin: 0px;
- }
- h1{
+}
+h1{
     margin: 0px;
- }
- .header{
+}
+.header{
     background-color: darkblue;
     height: 100px;
     width: 100%;
     text-align: left;
+}
+.data{
+    display: inline;
+    float: left;
+}
+.authorization{
+    display: inline;
+    float: right;
+    margin: 15px;
 }
 .content{
     display: flex;   
