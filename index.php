@@ -15,7 +15,12 @@
     <title>Моя страница</title>
 </head>
 <body>
-    <?php include_once 'php/header.php';?>
+    <div class="header">
+        <h1>Моя страница</h1>
+        <div class="data"><?php include_once 'php/data.php';?></div>
+        <div class="wordCount"><?php include_once 'wordCount.php';?></div>
+        <div class="authorization"><a href="php/authorization.php">авторизация</a></div>
+    </div>
     <?php include_once 'php/content.php';?>
     <?php include_once 'php/container.php';?>
     <?php include_once 'php/container_2.php';?>

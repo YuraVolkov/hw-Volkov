@@ -17,7 +17,6 @@ h1{
 .authorization{
     display: inline;
     float: right;
-    margin: 15px;
 }
 .content{
     display: flex;   
