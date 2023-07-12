@@ -1,3 +1,12 @@
+<?php
+if(isset($_COOKIE['lastVisitedPage'])){
+    $lastVisitedPage = $_COOKIE['lastVisitedPage'];
+}
+if (isset($_POST['login'])) {
+    $login = $_POST['login'];
+    $password = $_POST['password'];
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,17 +31,18 @@
                 </div>
                 <div class="submit">
                     <label></label>
-                    <button type="submit">Авторизоваться</button>
+                    <button type="submit" value="Войти">Авторизоваться</button>
                 </div>
+                <div class="links">
+                    <div class="link">
+                        <a href="fact.php">Факт</a>
+                    </div>
+                    <div class="link">
+                        <a href="bitrix.php">Битрикс24</a>
+                    </div>
+                </div>    
             </fieldset>
         </form>
     </div>
-    <!--<?php
-        print_r($_POST);
-        $login = $_POST['login'];
-        $password = $_POST['password'];
-        echo $login;
-        echo $password;
-    ?>-->
 </body>
 </html>

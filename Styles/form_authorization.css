@@ -12,7 +12,7 @@ body{
 fieldset{
     border-radius: 10px;
     border-color: black;
-    height: 130px;
+    height: 160px;
     width: 300px
 }
 label{
@@ -29,4 +29,13 @@ div{
 }
 .registration{
     height: 150px;
+}
+.link{
+    background-color: aliceblue;
+    display: inline;
+    border-radius: 15%;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
 }

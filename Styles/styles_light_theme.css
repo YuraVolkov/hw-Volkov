@@ -6,9 +6,12 @@ h1{
 }
 .header{
     background-color: cornflowerblue;
-    height: 100px;
+    height: 120px;
     width: 100%;
     text-align: left;
+}
+.form{
+    display: inline;
 }
 .data{
     display: inline;

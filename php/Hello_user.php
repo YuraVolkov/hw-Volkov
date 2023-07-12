@@ -1,4 +1,3 @@
 <?php
-echo "Привет!";
-print_r($_POST);
+echo "Последний посещенный сайт: " . $_COOKIE['lastVisitedPage'];
 ?>
