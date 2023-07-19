@@ -6,18 +6,24 @@ h1{
 }
 .header{
     background-color: cornflowerblue;
-    height: 120px;
+    height: 140px;
     width: 100%;
     text-align: left;
 }
 .form{
     display: inline;
+    margin: 0px;
 }
 .data{
     display: inline;
     float: left;
 }
 .authorization{
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+.registration{
     display: inline;
     float: right;
 }

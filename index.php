@@ -35,13 +35,14 @@ if ($selectedColor) {
                     <option value="cornflowerblue" <?php if ($selectedColor == 'cornflowerblue') echo 'selected'; ?>>Синий</option>
                     <option value="aqua" <?php if ($selectedColor == 'aqua') echo 'selected'; ?>>Аква</option>
                 </select>
-                <button type="submit">Применить</button>
+                <button type="submit">Применить
             </form>
         </div>
+        <div class="registration"><a href="php/registration.php">регистрация</a></div>
         <div class="authorization"><a href="php/authorization.php">авторизация</a></div>
     </div>
     <?php include_once 'php/content.php';?>
     <?php include_once 'php/container.php';?>
     <?php include_once 'php/container_2.php';?>
 </body>
-</html>
+</html></button>

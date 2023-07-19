@@ -1,12 +1,6 @@
 <?php
-if(isset($_COOKIE['lastVisitedPage'])){
-    $lastVisitedPage = $_COOKIE['lastVisitedPage'];
-}
-if (isset($_POST['login'])) {
-    $login = $_POST['login'];
-    $password = $_POST['password'];
-}
-?>
+session_start();
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
