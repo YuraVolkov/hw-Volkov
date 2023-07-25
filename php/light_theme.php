@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="Styles/styles_light_theme.css">
