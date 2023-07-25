@@ -1,17 +1,11 @@
 <?php
-$hostname = "localhost";
-$username = "Yura";
-$password = 123;
-$dbname = "People";
-$connect = mysqli_connect($hostname, $username, $password, $dbname);
-mysqli_set_charset($connect, 'utf8');
+require 'OOP.php';
+$database = new registration("localhost", "Yura", 123, "People");
 if(isset($_POST['submit'])){
     $err = [];
     if(count($err) == 0)
     {
-        $login = $_POST['login'];
-        $password = md5(trim($_POST['password']));
-        mysqli_query($connect,"INSERT INTO users SET user_login='".$login."', user_password='".$password."'");
+        $database->user($_POST['login'], $_POST['password']);
         header("Location: authorization.php");
         exit();
     }

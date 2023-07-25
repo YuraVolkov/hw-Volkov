@@ -1,12 +1,8 @@
 <?php
-$hostname = "localhost";
-$username = "Yura";
-$password = 123;
-$dbname = "People";
-$connect = mysqli_connect($hostname, $username, $password, $dbname);
-mysqli_set_charset($connect, 'utf8');
-$result = mysqli_query($connect, "SELECT user_login, user_password FROM users");
-$selectArray = mysqli_fetch_all($result, MYSQLI_ASSOC);
+session_start();
+require 'OOP.php';
+$database = new registration("localhost", "Yura", 123, "People");
+$selectArray = $database->selectUsers();
 $foundUser = false;
 foreach($selectArray as $user){
     if($user['user_login'] == $_POST['login'] && $user['user_password'] == md5($_POST['password'])){
@@ -15,7 +11,7 @@ foreach($selectArray as $user){
         break;
     }
 }
-if(!$foundUser){
-    echo 'Неправильный логин или пароль';
+    if(!$foundUser){
+        echo 'Неправильный логин или пароль';
 }
 ?>
